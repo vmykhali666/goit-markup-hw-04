@@ -415,7 +415,7 @@ address {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
-.close-modal-window {
+.close-modal-window-bottom {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -432,8 +432,8 @@ address {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close-modal-window:hover,
-.close-modal-window:focus {
+.close-modal-window-bottom:hover,
+.close-modal-window-bottom:focus {
   background-color: var(--link-header-color);
   border: none;
 }
