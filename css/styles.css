@@ -125,9 +125,14 @@ address {
   margin-right: 76px;
 }
 
-.footer-sub-container > .icon-logo_text {
+.footer-sub-container .icon-logo_text {
   display: inline-block;
   margin-bottom: 16px;
+}
+
+.footer-sub-container {
+  display: flex;
+  align-items: baseline;
 }
 
 
@@ -475,6 +480,16 @@ address {
 .customers-link:focus {
   color: #404bbf;
   background-color: #404bbf;
+}
+
+.social-text {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--white-color);
+  margin-bottom: 16px;
 }
 
 /* modal window */
