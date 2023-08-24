@@ -85,7 +85,7 @@ address {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-navigation_li > a::after {
+.current::after {
   content: "";
   position: absolute;
   left: 0;
@@ -293,6 +293,7 @@ address {
   color: var(--cloud-color);
   justify-content: center;
   padding: 188px 0;
+  margin: 0 auto;
   max-width: 1440px;
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img-name.jpg);
   background-repeat: no-repeat;
@@ -311,6 +312,7 @@ address {
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 1.12px;
+  font-weight: 700;
   text-align: center;
   color: var(--white-color);
   max-width: 496px;
@@ -384,6 +386,7 @@ address {
 .content-photo_h,
 .content-team_h {
   font-size: 36px;
+  font-weight: 700;
   color: var(--main-font-color);
   text-transform: capitalize;
   line-height: 1.11em;
@@ -426,10 +429,6 @@ address {
   overflow: hidden;
   background-color: var(--white-color);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
-
-.team-persone_img {
-  margin-bottom: 32px;
 }
 
 .team-persone_name {
@@ -522,6 +521,11 @@ address {
   border-color: #404bbf;
 }
 
+.customers-link:hover .customers-icon use,
+.customers-link:focus .customers-icon use{
+  fill: #404bbf;
+}
+
 .customers-icon {
   fill: currentColor;
 }
@@ -552,6 +556,11 @@ address {
 .footer_social .social-link:hover,
 .footer_social .social-link:focus {
   background-color: #31d0aa;
+}
+
+.customers-link:hover .customers-icon use,
+.customers-link:focus .customers-icon use{
+  fill: var(--link-header-color);
 }
 
 .header-navigation_a {
